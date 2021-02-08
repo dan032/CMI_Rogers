@@ -1,5 +1,5 @@
 # Is used to parse all the PCAP/PCAPNG files within a folder and is used to either populate the GUI
-# to show all fields within the PCAP files, and takes the selected fields and parses them into a CSV file
+# as to show all fields within the PCAP files, as well as taking the selected fields and parses them into a CSV file
 
 import json
 import os

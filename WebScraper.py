@@ -1,5 +1,5 @@
 # Was used in previous iterations to scrape WireShark's webpages to populate the possible fields to select in the GUI
-#
+# Not used in current iteration as fields displayed in GUI are taken directly from the PCAP files themselves
 import requests
 from bs4 import BeautifulSoup
 import json
