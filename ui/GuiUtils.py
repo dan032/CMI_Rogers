@@ -1,6 +1,6 @@
 from tkinter import filedialog
 import os
-
+import json
 
 def f_explore_callback(parser):
     folder_name = filedialog.askdirectory(mustexist=True, initialdir=os.getcwd())
@@ -21,8 +21,10 @@ def submit_callback(tree, parser):
             field_name = tree.item(i)['values'][1]
 
             fields[field_name] = protocol
+        with open("outputs/selected_fields.txt", "w") as f:
+            f.write(json.dumps(fields))
+        parser.pcap_to_csv_imsi_mapping(fields)
 
-        parser.pcap_to_csv(fields)
 
 
 def clear_callback(tree):

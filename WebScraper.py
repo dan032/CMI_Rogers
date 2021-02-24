@@ -45,7 +45,7 @@ class WebScraper:
                 self._fields[protocol].append(protocol_dict)
 
     def _save_fields(self):
-        with open("outputs/fields.txt", "w") as f:
+        with open("fields/fields.txt", "w") as f:
             f.write(json.dumps(self._fields))
 
 
