@@ -1,0 +1,1 @@
+{"time_relative": "frame_info", "protocols": "frame_info", "enb_ue_s1ap_id": "s1ap", "cellidentity": "s1ap", "mme_ue_s1ap_id": "s1ap", "teid": "gtpv2", "teid": "gtp"}

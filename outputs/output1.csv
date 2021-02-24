@@ -1,0 +1,12 @@
+Frame Number,time_relative,protocols,enb_ue_s1ap_id,cellidentity,mme_ue_s1ap_id,teid,IMSI
+1,0.000000000,eth|ethertype|ip|sctp|s1ap|nas-eps|chap|chap|ipcp,0,0x00708014,,,001019123456001
+2,0.000413000,eth|ethertype|ip|sctp|s1ap|nas-eps,0,0x00708014,0,,001019123456001
+3,0.000737000,eth|ethertype|ip|sctp|s1ap|nas-eps,0,0x00708014,0,,001019123456001
+4,0.000967000,eth|ethertype|ip|sctp|s1ap|nas-eps,0,0x00708014,0,,001019123456001
+5,0.001372000,eth|ethertype|ip|sctp|s1ap|nas-eps,0,0x00708014,0,,001019123456001
+6,0.001552000,eth|ethertype|ip|sctp|s1ap|nas-eps,0,0x00708014,0,,001019123456001
+7,0.001922000,eth|ethertype|ip|sctp|s1ap|nas-eps|chap|chap|ipcp,0,0x00708014,0,,001019123456001
+8,0.002261000,eth|ethertype|ip|sctp|s1ap|nas-eps|ipcp|nas-eps|ipcp,0,0x00708014,0,,001019123456001
+9,0.002804000,eth|ethertype|ip|sctp|s1ap,0,0x00708014,0,,001019123456001
+10,0.002837000,eth|ethertype|ip|sctp|s1ap|nas-eps|ipcp,0,0x00708014,0,,001019123456001
+11,0.002843000,eth|ethertype|ip|sctp|s1ap|nas-eps|ipcp,0,0x00708014,0,,001019123456001
