@@ -1,6 +1,6 @@
 from tkinter import ttk, Tk, Button
-from ui import GuiUtils
-from PcapParser import PcapParser
+from first_parser.ui import GuiUtils
+from first_parser.PcapParser import PcapParser
 
 parser = PcapParser()
 
