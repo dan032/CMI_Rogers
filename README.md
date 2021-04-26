@@ -1,6 +1,10 @@
 # CMI_Rogers
 
-Current prototype that is used to gather all fields held within a folder of PCAP files. It then displays them in the GUI 
-and converts all of the fields that the user selects into CSV files (1 CSV file per PCAP file).
+There are two packages in the repository:
 
-At the moment performance needs to be improved, as it takes a significant amount of time to parse the PCAP files with PyShark.
+1) first_parser refers to my first attempt at parsing 4G PCAP files. The most important file here is the PcapParser.py
+file, where I began to figure out how to map a particular device to different activity along the network via it's tunnel IDs.
+
+2) hourly_cronjob is setup to allow constant network traffic collection. Every hour a new cronjob is started so a new PCAP 
+file can be created. At the end of the hour, the PCAP file is then statistically analyzed by NFStream to provide useful
+features for machine learning.
