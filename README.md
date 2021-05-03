@@ -1,5 +1,4 @@
-# CMI_Rogers
-
+# CMI
 There are two packages in the repository:
 
 1) first_parser refers to my first attempt at parsing 4G PCAP files. The most important file here is the PcapParser.py
