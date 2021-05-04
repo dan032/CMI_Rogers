@@ -10,6 +10,11 @@ from pyshark.packet.layer import Layer
 
 
 class PcapParser:
+    """
+    Parses all PCAP files in a folder and converts them into csv files. The goal of this parser
+    was to attempt to aggregate which user was responsible for sending any particular packet based on a variety of
+    identifiers.
+    """
     def __init__(self):
         self._folder = None
         self._fields = {}
@@ -24,6 +29,11 @@ class PcapParser:
         return self._folder
 
     def run(self):
+        """
+        Deprecated method originally used with the original GUI project.
+        Iterates through each file and determines all the fields within them so the user can select them
+        in the GUI
+        """
         t0 = time.time()
         if self._folder is None:
             return False, None
@@ -138,8 +148,6 @@ class PcapParser:
                         csv.write('\n')
                 cap.close()
 
-
-
     def pcap_to_csv(self, selected_fields):
         header = "Frame Number,"
         for field_name in selected_fields:
@@ -180,6 +188,7 @@ class PcapParser:
         with open("fields/fields.txt", "w") as f:
             f.write(json.dumps(self._fields))
 #
+
 p = PcapParser()
 p.set_folder(os.path.join(os.getcwd(), "pcaps"))
 with open("fields/selected_fields.txt", "r") as f:

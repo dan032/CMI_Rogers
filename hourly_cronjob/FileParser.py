@@ -3,7 +3,16 @@ from nfstream import NFStreamer
 
 
 class FileParser:
+    """
+    Creates a CSV file containing flow information based off of the provided PCAP file
 
+    path: str
+        The absolute path of the pcap file
+    directory: str
+        The directory to save the csv file
+    file_name: str
+        The name of the file
+    """
     def __init__(self, path, directory, file_name):
         self._path = path
         self._directory = directory
